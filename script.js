@@ -1,4 +1,4 @@
-var div = document.querySelector("#root");
-var h1 = document.createElement("h1");
-h1.innerHTML = "Hello from Inner HTML";
-div.appendChild(h1);
+var h1 = React.createElement('h1', null, "Hello from React");
+var parent = ReactDOM.createRoot(document.getElementById("parent"));
+parent.render(h1);
+
